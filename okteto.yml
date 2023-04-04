@@ -8,6 +8,8 @@ build:
     context: frontend
 
 deploy:
+  image: okteto/pipeline-runner:1.0.0-sam
+  commands:
   - echo $OKTETO_BUILD_API_IMAGE
   - echo $OKTETO_BUILD_FRONTEND_IMAGE
   - helm upgrade --install movies chart
