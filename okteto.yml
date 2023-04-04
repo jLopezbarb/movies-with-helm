@@ -7,6 +7,8 @@ build:
     context: frontend
 
 deploy:
+  - echo $OKTETO_BUILD_API_IMAGE
+  - echo $OKTETO_BUILD_FRONTEND_IMAGE
   - helm upgrade --install movies chart
     --set api.image=${OKTETO_BUILD_API_IMAGE}
     --set frontend.image=${OKTETO_BUILD_FRONTEND_IMAGE}
