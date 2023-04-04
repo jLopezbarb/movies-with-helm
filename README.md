@@ -1,4 +1,4 @@
-# Movies App with Helma
+# Movies App with Helm
 
 
 This example shows how to leverage [Okteto](https://github.com/okteto/okteto) to develop a Node.js + React Sample App directly in Kubernetes. The Node + React Sample App is deployed using a [Helm Chart](https://github.com/okteto/movies/tree/main/chart). It creates the following components:
