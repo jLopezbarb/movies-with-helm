@@ -6,7 +6,7 @@ build:
     args:
       - KEY=$VALUE
     secrets:
-      - my_env: katana-variables.okteto.env
+      my_env: katana-variables.okteto.env
   frontend:
     context: frontend
 
