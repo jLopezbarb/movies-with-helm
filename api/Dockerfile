@@ -10,5 +10,7 @@ RUN yarn install
 
 ARG KEY
 
+RUN printenv
+
 COPY . .
 CMD ["yarn", "start"]
