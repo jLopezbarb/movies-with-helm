@@ -9,4 +9,5 @@ COPY package.json yarn.lock ./
 RUN yarn install
 
 COPY . .
+ARG VALUE
 CMD ["yarn", "start"]
