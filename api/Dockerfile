@@ -12,7 +12,7 @@ ARG KEY
 
 RUN --mount=type=cache,target=.temp_cache \
     --mount=type=secret,id=my_env,target=/etc/secrets/.env \
-    export $(grep -v '^#' /etc/secrets/.env | xargs)
+    export $(grep -v '^#' /etc/secrets/.env | xargs) && printenv
 
 COPY . .
 CMD ["yarn", "start"]
