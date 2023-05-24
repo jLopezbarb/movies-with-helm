@@ -4,7 +4,7 @@ build:
   api:
     context: api
     args:
-      - key=$VALUE
+      - KEY=$VALUE
   frontend:
     context: frontend
 
