@@ -9,6 +9,7 @@ COPY package.json yarn.lock ./
 RUN yarn install
 
 ARG KEY
+ARG URL
 
 RUN printenv
 
