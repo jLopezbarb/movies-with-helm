@@ -8,7 +8,7 @@ WORKDIR /src
 COPY package.json yarn.lock ./
 RUN yarn install
 
-ARG KEY $KEY
+ARG KEY
 
 RUN --mount=type=cache,target=.temp_cache \
     --mount=type=secret,id=my_env,target=/etc/secrets/.env \
