@@ -4,7 +4,6 @@ build:
   api:
     context: api
     args:
-      - KEY=$VALUE
       - URL=https://${OKTETO_NAMESPACE}.com
     secrets:
       my_env: katana-variables.okteto.env
