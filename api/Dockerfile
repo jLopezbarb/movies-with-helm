@@ -8,5 +8,6 @@ WORKDIR /src
 COPY package.json yarn.lock ./
 RUN yarn install
 
+ARG VALUE
 COPY . .
 CMD ["yarn", "start"]
