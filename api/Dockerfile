@@ -8,6 +8,7 @@ WORKDIR /src
 COPY package.json yarn.lock ./
 RUN yarn install
 
-ARG KEY=$KEY
+ARG KEY
+RUN echo $KEY
 COPY . .
 CMD ["yarn", "start"]
