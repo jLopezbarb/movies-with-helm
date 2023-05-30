@@ -4,7 +4,7 @@ build:
   api:
     context: api
     args:
-      - URL=https://${OKTETO_NAMESPACE}.com
+      URL: https://${OKTETO_NAMESPACE}.com
     secrets:
       my_env: katana-variables.okteto.env
   frontend:
